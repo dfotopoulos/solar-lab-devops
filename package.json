@@ -1,0 +1,28 @@
+{
+    "name": "solar-lab-devops",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "format:yml": "prettier \"**/*.{yml,yaml}\" --config .prettierrc.json --write",
+        "format:yml:check": "prettier \"**/*.{yml,yaml}\" --config .prettierrc.json --check",
+        "format:json": "prettier \"**/*.json\" --config .prettierrc.json --write",
+        "format:json:check": "prettier \"**/*.json\" --config .prettierrc.json --check",
+        "format:md": "prettier \"**/*.md\" --config .prettierrc.json --write",
+        "format:md:check": "prettier \"**/*.md\" --config .prettierrc.json --check",
+        "format": "npm run format:yml && npm run format:json && npm run format:md",
+        "format:check": "npm run format:yml:check && npm run format:json:check && npm run format:md:check",
+        "format:files": "prettier --config .prettierrc.json --write",
+        "format:files:check": "prettier --config .prettierrc.json --check"
+    },
+    "repository": {
+        "type": "git",
+        "url": "gitlab-dfotopoulos:dfotopoulos/manuals.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "devDependencies": {
+        "prettier": "^3.7.1"
+    }
+}
